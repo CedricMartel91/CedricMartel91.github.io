@@ -13,7 +13,8 @@ const winningCombos = [
 /*----- app's state (variables) -----*/
 
 let board;
-let turn = 'X';
+//turn -> tour pour changer la langue
+let tour = 'X';
 let win;
 
 /*----- cached element references -----*/
@@ -40,8 +41,8 @@ function handleTurn() {
     let idx = squares.findIndex(function(square) {
         return square === event.target;
     });
-    board[idx] = turn;
-    turn = turn === 'X' ? 'O' : 'X';
+    board[idx] = tour; 
+    tour = tour === 'X' ? 'O' : 'X';
     win = getWinner();
     render();
 };
@@ -60,7 +61,45 @@ function render() {
     //this moves the value of the board item into the squares[idx]
     squares[index].textContent = mark;
     });
-    messages.textContent = win === 'T' ? `That's a tie, queen!` : win ? `${win} wins the game!` : `It's ${turn}'s turn!`;
+    //changer turn -> tour pour afficher fr
+    messages.textContent = win === 'T' ? `Égalité!` : win ? `${win} Gagne la partie!` : `Au tour de ${tour}!`;
     };
 
 init();
+
+let pointageX = 0;
+
+document.getElementById("Moins").onclick = function(){
+    pointageX -= 1;
+    document.getElementById("ScoreX").innerHTML = pointageX;
+}
+
+document.getElementById("Remettre a zero").onclick = function(){
+    pointageX = 0;
+    document.getElementById("ScoreX").innerHTML = pointageX;
+}
+
+document.getElementById("Ajouter").onclick = function(){
+    pointageX += 1 ;
+    document.getElementById("ScoreX").innerHTML = pointageX;
+}
+
+
+let pointageO  = 0;
+
+
+document.getElementById("MoinsO").onclick = function(){
+    pointageO -= 1;
+    document.getElementById("ScoreO").innerHTML = pointageO;
+}
+
+document.getElementById("Remettre a zeroO").onclick = function(){
+    pointageO = 0;
+    document.getElementById("ScoreO").innerHTML = pointageO;
+}
+
+document.getElementById("AjouterO").onclick = function(){
+    pointageO += 1 ;
+    document.getElementById("ScoreO").innerHTML = pointageO;
+}
+

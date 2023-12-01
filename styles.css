@@ -1,12 +1,17 @@
 body {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    /*font pour tout (fait plus beau)*/
+    font-family:Pirate;
     }
+    
+h1{
+    font-size: 30px;
+}    
     
     
 h2 {
     margin: 0 auto;
-    font-size: 35px;
+    font-size: 50px;
     margin: 10px;
 }
     
@@ -19,6 +24,9 @@ h2 {
     /* this will center content vertically */
     align-items: center;
     /* tells the container to align the children in columns rather than rows */
+
+    font-family:Pirate; 
+    /*font pour X & O*/
 }
 
 .flex-column {
@@ -26,6 +34,9 @@ h2 {
     width: 100%;
     flex-direction: column;
     /* tells the container to drop down once it reaches max-width */
+
+    font-family:Pirate;
+    /*font pour X & O*/
 }
 
 .flex-wrap {
@@ -36,7 +47,7 @@ h2 {
     
     
 .square {
-    border: 2px solid rgba(0, 0, 0, .75);
+    border: 2px solid rgba(0, 0, 0, 0.75);
     height: 140px;
     width: 140px;
     font-size: 80px;
@@ -48,9 +59,66 @@ h2 {
     
 #reset-button {
     text-align: center;
-    font-size: 20px;
-    border: 1px solid black;
+    font-size: 16px;
+    border: 1px solid rgb(0, 0, 0);
     height: 55px;
     width: 100px;
     margin: 10px;
+}
+
+#lien { 
+    text-align:left; 
+    align-self: center;
+    font: size 15px;
+}
+#nom {
+    text-align: center;
+    font-size: 50px;
+}
+footer {
+    background-color:rgb(157, 0, 0);
+    border: 10px solid black;
+    
+}
+
+/*position de limage*/
+.img-container{
+    display: flex;
+   flex-direction: row-reverse;
+   align-items: center ;
+}
+
+/*pour rendre ronde*/
+img{
+    border-radius: 50%;
+}
+
+/* les web fonts dans note de cours*/
+@font-face {
+    font-family: "Pirate";
+    src: url(xbones.ttf);
+}
+    
+#ScoreX{ 
+    font-size: 70px;
+   /*visibilite/espace autour*/ 
+   display: block; 
+   color: blue;
+} 
+
+#ScoreO{ 
+    font-size: 70px;   
+   display: block; 
+   color: chartreuse;
+   
+   
+} 
+
+/*agrandir Font x et o https://stackoverflow.com/questions/2599627/how-to-select-label-for-xyz-in-css*/
+label[for=X] {
+    font-size: 80px;
+}
+
+label[for=O] {
+    font-size: 80px;
 }

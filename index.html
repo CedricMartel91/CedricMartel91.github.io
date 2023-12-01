@@ -9,11 +9,11 @@
     <!-- And this is how we link up the JS! -->
     <script defer src="main.js"></script>
     <!-- A fun title -->
-    <title>Empowering Tic Tac Toe for the Good of Humanity</title>
+    <title>Donner du pouvoir au Tic Tac Toe pour le bien de l'humanité</title>
 </head>
 <body>
     <h1>Tic-Tac-Toe</h1>
-    <h2>It's X's turn!</h2>
+    <h2>C'est au tour de X!</h2>
     <!-- Many websites are just divs on divs on divs. -->
     <div class="flex-container flex-column">
         <div class="flex-container flex-wrap" id="board">
@@ -28,7 +28,41 @@
         <div class="square"></div>
         </div>
         <!-- I added a little reset button because our users are going to want to play round after round of our glorious game without ever refreshing the browser! -->
-        <button id="reset-button">reset</button>
+        <button id="reset-button">Réinitialiser</button>
     </div>
+
+    <!--scoreboard bouton ajouter/diminuer/reset https://www.youtube.com/watch?v=dKOT5LcouzQ&ab_channel=BroCode-->
+    <label for="X">X</label>
+    <label id="ScoreX">0</label><br>
+    <button id="Moins">Diminuer un point</button>
+    <button id="Remettre a zero">Remettre à zéro</button>
+    <button id="Ajouter">Ajouter un point</button>
+    <br><br>
+
+    <label for="O">O</label>
+    <label id="ScoreO">0</label><br>
+    <button id="MoinsO">Diminuer un point</button>
+    <button id="Remettre a zeroO">Remettre à zéro</button>
+    <button id="AjouterO">Ajouter un point</button>
+    
+    
+
+
+
 </body>
+<footer>
+    <p id="lien"> inspiration du projet : <br> 
+        <a href="https://github.com/annaelizabeth2019/tictactoetwo" target="_blank">https://github.com/annaelizabeth2019/tictactoetwo</a>
+    </p>  
+    <p id="nom"> Cédric Martel <br>
+        Design Web A2023
+    </p>
+      
+    <div class="img-container">   <a href="mailto:ced98312@hotmail.com"> <img src="pirate raccoon.jpg" alt="me" 
+    style="width:150px" height="150px"></a> </div> 
+    
+
+        
+
+ </footer>
 </html>
