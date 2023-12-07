@@ -78,8 +78,12 @@ h2 {
 footer {
     background-color:rgb(157, 0, 0);
     border: 10px solid black;
+
+ }
+
+
     
-}
+
 
 /*position de limage*/
 .img-container{
@@ -122,3 +126,18 @@ label[for=X] {
 label[for=O] {
     font-size: 80px;
 }
+/*
+essaie de changer mon footer
+#footer{ 
+    
+    
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+
+
+}
+*/
