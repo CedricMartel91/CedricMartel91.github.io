@@ -74,7 +74,7 @@ document.getElementById("Moins").onclick = function(){
     document.getElementById("ScoreX").innerHTML = pointageX;
 }
 
-document.getElementById("Remettre a zero").onclick = function(){
+document.getElementById("RemettreAzero").onclick = function(){
     pointageX = 0;
     document.getElementById("ScoreX").innerHTML = pointageX;
 }
@@ -93,7 +93,7 @@ document.getElementById("MoinsO").onclick = function(){
     document.getElementById("ScoreO").innerHTML = pointageO;
 }
 
-document.getElementById("Remettre a zeroO").onclick = function(){
+document.getElementById("RemettreAzeroO").onclick = function(){
     pointageO = 0;
     document.getElementById("ScoreO").innerHTML = pointageO;
 }
